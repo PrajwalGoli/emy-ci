@@ -1,12 +1,11 @@
 # Normal build steps
 . build/envsetup.sh
-lunch arrow_lavender-userdebug
+lunch aospa_lavender-user
 
 # export variable here
 export TZ=Asia/Kolkata
-export SELINUX_IGNORE_NEVERALLOWS=true
-export ARROW_GAPPS=true
 
 compile_plox () {
-make bacon -j$(nproc --all)
+#./rom-build.sh lavender -t user -j$(nproc --all)
+make bootimage -j$(nproc --all) && make vendorimage -j$(nproc --all)
 }
