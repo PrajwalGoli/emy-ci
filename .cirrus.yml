@@ -8,7 +8,7 @@ env: # Environment variables to pass to all tasks
     bot_api: "ENCRYPTED[cae8616563f451b9c0f45bb4dc2c006744f90c362fdab03b2e923c0d8df72de5aa3a1379ac7f84bca017a66b42e3205b]"
     chat_id: "-1001428571638"
     git_cookies: 0
-    REAL_REPO_OWNER: "ENCRYPTED[e3fb35ffe2758428a850b52f88daf80b19307a39c1526a644b9abba42a8fb8e12316d71b6b8209176de8c0ecf9dd83b2]" # main id
+    REAL_REPO_OWNER: "ENCRYPTED[8a379578391e4d3a157e9f579b37e816c0b613d02c61a33ec767dc652201c879097b67c6cdf1d49245ef9b4193f353be]" # main id
 
 # store information about git here
     gmail: ehteshammalik18998@gmail.com
