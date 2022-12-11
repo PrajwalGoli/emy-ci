@@ -26,8 +26,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 git clone --depth=1 https://wHo-EM-i:$my_og_token@github.com/wHo-EM-i/device_xiaomi_lavender -b topaz device/xiaomi/lavender
 
 #test
-echo "TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-" >> device/xiaomi/lavender/B*.mk
-echo "TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := arm-linux-gnueabi-" >> device/xiaomi/lavender/B*.mk
+echo "KERNEL_CUSTOM_LLVM := true" >> device/xiaomi/lavender/B*.mk
 
 # patch
 cd /tmp/rom/bionic && curl https://github.com/wHo-EM-i/bionic/commit/61ea0bc221c8ae7992b44c58302e23ab3e748742.patch | git am
