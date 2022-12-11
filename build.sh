@@ -6,6 +6,5 @@ lunch aospa_lavender-user
 export TZ=Asia/Kolkata
 
 compile_plox () {
-#./rom-build.sh lavender -t user -j$(nproc --all)
-make bootimage -j$(nproc --all) && make vendorimage -j$(nproc --all)
+./rom-build.sh lavender -t user -j$(nproc --all)
 }
