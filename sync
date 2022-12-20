@@ -35,6 +35,7 @@ cd /tmp/rom/device/qcom/common && sed -i 's|include device/qcom/sepolicy-legacy/
 #cd /tmp/rom/kernel/xiaomi/lavender && git fetch https://github.com/projects-nexus/android_xtreme_kernel_lavender -t topaz
 #git cherry-pick b1f2b0c7b5ecfb733c042a7b21d852807e40956e^..e6e8510bea413213412e077b1016df9d0980de6e
 #git cherry-pick 29f9a3fb5442aadbb5417c18966722c594d6d910
+cp -f /tmp/rom/device/xiaomi/lavender/configs/perf/*.xml /tmp/rom/device/qcom/common/vendor/perf/configs/sdm660/perf
 
 . /tmp/ci/function
 tg "$rom_name source sync completed!
