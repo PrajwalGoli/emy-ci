@@ -30,7 +30,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # patch
 #cd /tmp/rom/system/libhidl && curl https://github.com/ArrowOS/android_system_libhidl/commit/fbdf10a33f546d202ae12b4b864177fea9faa998.patch | git am
 #cd /tmp/rom/device/qcom/common && curl https://github.com/wHo-EM-i/android_device_qcom_common/commit/b3a612e836ddf3e9ac766612ee4bd9194b681c95.patch | git am
-#cd /tmp/rom/bionic && curl https://github.com/wHo-EM-i/bionic/commit/61ea0bc221c8ae7992b44c58302e23ab3e748742.patch | git am
+cd /tmp/rom/bionic && curl https://github.com/wHo-EM-i/bionic/commit/5d7113e5323cfd9ad528319008b2895f5ac29113.patch | git am
+cd /tmp/rom/bionic && curl https://github.com/wHo-EM-i/bionic/commit/2fa9b6e73c2f0c2b21b529a14e886ac79e5a081f.patch | git am
 #cd /tmp/rom/hardware/libhardware && curl https://github.com/AOSPA/android_hardware_libhardware/commit/bec92996fbc143620da9a4a3c22a744958535ad5.patch | git am
 
 . /tmp/ci/function
